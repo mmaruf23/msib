@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Nav() {
+export default function Nav({isSingleNav = false}) {
   return (
     <>
       {/* // -- NAVBAR */}
@@ -70,6 +70,7 @@ export default function Nav() {
         </div>
       </nav>
       {/* // -- SEMI NAVBAR */}
+      {!isSingleNav && 
       <nav className="hidden lg:flex justify-center">
         <div className="flex justify-start w-[1140px] gap-6">
           <div className="flex gap-5 text-wrap justify-center items-center font-semibold p-4 hover:bg-gray-100 hover:text-blue-600">
@@ -101,6 +102,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+      }
     </>
   );
 };

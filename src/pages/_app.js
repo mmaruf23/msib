@@ -9,9 +9,10 @@ const PlusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export default function App({ Component, pageProps }) {
+  
   return (
     <div className={PlusJakartaSans.variable}>
-      <Nav />
+      <Nav isSingleNav={Component.isSingleNav}/>
       <Component {...pageProps} />
       <Footer />
     </div>

@@ -13,6 +13,7 @@ export default function Program() {
           text={
             'Bantu peningkatan kualitas pendidikan dasar dengan terlibat langsung  pada proses pengajaran di sekolah-sekolah yang berlokasi di seluruh daerah di Indonesia.'
           }
+          target="/program/mengajar"
           sdk={true}
         />
         <ProgramCard
@@ -22,6 +23,7 @@ export default function Program() {
             'Dapatkan pengalaman dunia kerja secara langsung sebagai persiapan kariermu.'
           }
           find="Cari Posisi Magang"
+          target="/program/magang"
           sdk={true}
         />
         <ProgramCard
@@ -30,6 +32,7 @@ export default function Program() {
           text={
             'Jalankan proyek penelitian dengan studi kasus nyata dari para pelaku industri ternama.'
           }
+          target="/program/studi-independen"
           find="Cari Kelas Studi Independen"
           sdk={true}
         />
