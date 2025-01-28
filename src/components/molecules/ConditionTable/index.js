@@ -4,7 +4,7 @@ export default function Table() {
       className="w-full overflow-x-scroll lg:pl-0 pl-5"
       style={{ scrollbarWidth: 'none' }}
     >
-      <div className="w-[1170px] rounded-2xl border lg:pl-0">
+      <div className="w-[1170px] rounded-2xl border lg:pl-0 bg-white">
         <table className="font-plus w-full">
           <thead>
             <tr className="text-left">

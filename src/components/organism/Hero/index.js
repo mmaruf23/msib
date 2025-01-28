@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <section className="flex justify-center bg-[url(/assets/headline-mahasiswa.webp)] bg-no-repeat bg-cover bg-center w-full">
@@ -15,19 +17,23 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex mt-5 gap-3 flex-col lg:flex-row text-sm">
-            <div className="bg-blue-600 rounded-2xl lg:w-56 lg:py-3 py-2.5 text-center">
-              <span className="font-semibold lg:text-[16px]">
-                Telusuri Program
-              </span>
-            </div>
-            <div className="bg-white rounded-2xl lg:py-3 py-2.5 lg:w-56 text-center">
-              <span className="font-semibold text-black lg:text-[16px]">
-                Cek Persyaratan Umum
-              </span>
-            </div>
+            <Link href={'/program'}>
+              <div className="bg-blue-600 rounded-2xl lg:w-56 lg:py-3 py-2.5 text-center">
+                <span className="font-semibold lg:text-[16px]">
+                  Telusuri Program
+                </span>
+              </div>
+            </Link>
+            <Link href={'#condition'}>
+              <div className="bg-white rounded-2xl lg:py-3 py-2.5 lg:w-56 text-center">
+                <span className="font-semibold text-black lg:text-[16px]">
+                  Cek Persyaratan Umum
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
     </section>
   );
-};
+}

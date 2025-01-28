@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nav() {
   return (
@@ -28,13 +29,20 @@ export default function Nav() {
           </div>
           <div className="text-white items-center gap-11 font-bold text-base font-sans hidden lg:flex">
             <div>
-              <span>Beranda</span>
+              <Link href={"/"}>
+                <span>Beranda</span>
+              </Link>
             </div>
             <div>
-              <span>Program</span>
+              <Link href={"/program"}>
+                <span>Program</span>
+              </Link>
             </div>
             <div>
-              <span>Butuh Bantuan?</span>
+              <Link href={"https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/en-us"}>
+                <span>Butuh Bantuan?</span>
+              </Link>
+            
             </div>
             <div className="flex bg-white text-black items-center gap-2 p-3 rounded-3xl">
               <svg viewBox="0 0 24 24" height="20" fill="#A0A4A8" stroke="">
@@ -66,25 +74,25 @@ export default function Nav() {
         <div className="flex justify-start w-[1140px] gap-6">
           <div className="flex gap-5 text-wrap justify-center items-center font-semibold p-4 hover:bg-gray-100 hover:text-blue-600">
             <p className="w-20">Kampus Mengajar</p>
-            <svg viewBox="0 0 24 24" height={24} fill="" stroke="">
+            <svg className="fill-current" viewBox="0 0 24 24" height={24}>
               <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z" />
             </svg>
           </div>
           <div className="flex gap-5 text-wrap justify-center items-center font-semibold p-4 hover:bg-gray-100 hover:text-blue-600">
             <p className="w-28">Magang MSIB</p>
-            <svg viewBox="0 0 24 24" height={24} fill="" stroke="">
+            <svg className="fill-current" viewBox="0 0 24 24" height={24}>
               <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z" />
             </svg>
           </div>
           <div className="flex gap-5 text-wrap justify-center items-center font-semibold p-4 hover:bg-gray-100 hover:text-blue-600">
             <p className="w-36">Studi Independen Bersertifikat</p>
-            <svg viewBox="0 0 24 24" height={24} fill="" stroke="">
+            <svg className="fill-current" viewBox="0 0 24 24" height={24}>
               <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z" />
             </svg>
           </div>
           <div className="flex gap-5 text-wrap justify-center items-center font-semibold p-4 hover:bg-gray-100 hover:text-blue-600">
             <p className="w-40">Pertukaran Mahasiswa Merdeka</p>
-            <svg viewBox="0 0 24 24" height={24} fill="" stroke="">
+            <svg className="fill-current" viewBox="0 0 24 24" height={24}>
               <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z" />
             </svg>
           </div>

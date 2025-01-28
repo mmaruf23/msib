@@ -1,22 +1,23 @@
 import Image from 'next/image';
 
-export default function Card() {
+export default function Card({source, text, boldText, restText = ""}) {
   return (
     <div className="flex flex-col justify-between w-[296px] h-[400px] rounded-2xl m-3 p-4 bg-white">
       <div className="flex flex-col">
         <div className="flex justify-center w-[224px] h-[58px] my-4">
           <Image
             className=""
-            src="/assets/kampus-mengajar.png"
-            alt=""
+            src={source}
+            alt={boldText}
             width={300}
             height={300}
           />
         </div>
         <div className="">
           <p className="text-[18px] ">
-            Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
-            <span className="font-bold leading-5"> Kampus Mengajar</span>
+            {text}
+            <span className="font-bold leading-5">{boldText}</span>
+            {restText}
           </p>
         </div>
       </div>

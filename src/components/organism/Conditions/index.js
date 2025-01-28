@@ -3,7 +3,7 @@ import Notes from "@/components/molecules/Notes";
 
 export default function Conditions() {
   return (
-    <section className="flex lg:justify-center lg:mt-20 mt-5 bg-gray-100">
+    <section id="condition" className="flex lg:justify-center lg:mt-20 mt-5 bg-gray-100">
       <div className="lg:w-[1170px] w-screen">
         <div className="lg;my-4 lg;p-0 p-5">
           <p className="lg:text-[40px] text-[32px] font-bold">

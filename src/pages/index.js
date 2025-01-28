@@ -1,16 +1,17 @@
 import Benefits from "@/components/organism/Benefits";
 import Cards from "@/components/organism/Cards";
 import Conditions from "@/components/organism/Conditions";
-import Footer from "@/components/organism/Footer";
 import Hero from "@/components/organism/Hero";
-import Nav from "@/components/organism/Nav";
 import Questions from "@/components/organism/Questions";
-import Image from "next/image";
+import Head from "next/head";
 
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>HOME | Merdeka Belajar - Kampus Merdeka</title>
+      </Head>
       {/* <Nav /> */}
       <Hero />
       <Cards />
